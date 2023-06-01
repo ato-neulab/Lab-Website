@@ -1,0 +1,16 @@
+- name: "Alexandra To"
+  position: "Lab Director"
+  current: true
+
+- name: "Dilruba Showkat"
+  position: "PhD Student"
+  current: true
+
+- name: "Christopher Brooks"
+  position: "Undergraduate Assistant"
+  current: true
+  headshot: "chris.jpg"
+
+- name: "Jamie Camera"
+  position: "Undergraduate Assistant"
+  current: false

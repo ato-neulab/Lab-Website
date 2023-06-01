@@ -1,0 +1,29 @@
+---
+layout: "wrapper"
+author: "This is the people layout author"
+---
+<h1>{{ page.title }}</h1>
+{{ content }}
+<h2>Current Members</h2>
+{% for person in site.data.people %}
+  <ul>
+    {% if person.current == true %}
+    <li>
+        {% if person.headshot %} 
+          <img src="assets/images/headshots/{{ person.headshot }}" alt="">
+        {% endif %}
+        <b>{{ person.name }}</b> - {{ person.position }}
+      </li>
+    {% endif %}
+  </ul>
+{% endfor %}
+<h2>Lab Alumni</h2>
+{% for person in site.data.people %}
+  <ul>
+    {% if person.current == false %}
+    <li>
+      {{ person.name }}
+    </li>
+    {% endif %}
+  </ul>
+{% endfor %}

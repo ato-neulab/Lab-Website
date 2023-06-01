@@ -1,0 +1,51 @@
+.footer
+  background-color: $brown
+
+  .footer-neu-logo
+    height: 5rem
+    transition: all 0.3s ease-in-out
+
+    &:hover
+      transform: translateY(-4px)
+
+  .nav-container
+    text-decoration: none
+    text-transform: uppercase
+    font-weight: bold
+    font-family: 'Josefin Sans', sans-serif
+    flex-direction: row-reverse
+
+    ul
+      list-style-type: none
+      margin-bottom: 0
+
+      li a
+        text-align: end
+        color: $off-white
+        transition: all 0.3s ease-in-out
+
+        &:hover
+          transform: translateY(-4px)
+          color: $red
+
+  @media screen and (max-width: 768px)
+    .col-sm-12
+      justify-content: center
+
+      .footer-neu-logo
+        margin-bottom: 2rem
+
+  a
+    text-decoration: none
+
+  .footer-title
+    color: $off-white
+    font-size: 1rem
+    font-weight: normal
+    transition: all 0.3s ease-in-out
+
+    span
+      color: $red
+
+    &:hover
+      transform: translateY(-4px)
