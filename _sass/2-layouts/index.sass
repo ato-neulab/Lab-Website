@@ -22,10 +22,13 @@ section
       text-align: center
       color: $brown
 
+      @media screen and (max-width: 768px)
+        font-size: 1.75rem
+
       &:nth-child(even)
         color: $red
   .about-body
-    width: 75%
+    width: 65%
 
 .research-areas
   .ra-col
@@ -45,9 +48,6 @@ section
 
     @media screen and (max-width: 768px)
       max-height: 510px
-
-      // &::first-child
-      //   .ra-card
 
       &:last-child
         .ra-card
