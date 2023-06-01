@@ -1,11 +1,30 @@
 - name: "Dilruba Showkat"
   position: "PhD Student"
   current: true
+  headshot: "dilruba.png"
+  website: "https://scholar.google.com/citations?user=g7wnqBgAAAAJ&hl=en"
 
-- name: "Josie Zvelebilova"
+- name: "Jailyn Zabala"
   position: "PhD Student"
   current: true
+  headshot: "jailyn.png"
+  linkedin: "https://www.linkedin.com/in/jailyn-z-2b322b13a/"
+
+- name: "Josie Zvelebilova"
+  position: "Graduate Student"
+  current: true
   headshot: "josie.png"
+  linkedin: "https://www.linkedin.com/in/josiezvelebilova"
+
+- name: "Bethany Turay"
+  position: "Graduate Student"
+  current: true
+  headshot: "bethany.png"
+
+- name: "Gianna Williams"
+  position: "Graduate Student"
+  current: true
+  headshot: "gianna.png"
 
 - name: "Christopher Brooks"
   position: "Undergraduate Assistant"
@@ -14,6 +33,55 @@
   linkedin: "https://www.linkedin.com/in/chrooks/"
   website: "https://chrooks.com/"
 
-- name: "Jamie Camera"
+- name: "Laveda Chan"
   position: "Undergraduate Assistant"
+  current: true
+  headshot: "laveda.png"
+  linkedin: "https://www.linkedin.com/in/lavedachan/"
+
+- name: "Lingqing Wang"
+  position: "Undergraduate Assistant"
+  current: true
+
+
+- name: "Jamie Camera"
+  current: false
+
+- name: "Doxa Asibey"
+  current: false
+
+- name: "Heng Su"
+  current: false
+
+- name: "Xinyu Hou"
+  current: false
+
+- name: "Devina Raithatha"
+  current: false
+
+- name: "Jahaan Saini"
+  current: false
+
+- name: "Maeve Singer"
+  current: false
+
+- name: "Srinivas Teja Bhattar"
+  current: false
+
+- name: "Shipra Shah"
+  current: false
+
+- name: "Rafal Smietana"
+  current: false
+
+- name: "Shereen Bellamy"
+  current: false
+
+- name: "Natalie Chen"
+  current: false
+
+- name: "Audrey Lehrer"
+  current: false
+
+- name: "Shipra Chirag Shah"
   current: false
