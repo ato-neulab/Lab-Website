@@ -1,15 +1,18 @@
-- name: "Alexandra To"
-  position: "Lab Director"
-  current: true
-
 - name: "Dilruba Showkat"
   position: "PhD Student"
   current: true
 
+- name: "Josie Zvelebilova"
+  position: "PhD Student"
+  current: true
+  headshot: "josie.png"
+
 - name: "Christopher Brooks"
   position: "Undergraduate Assistant"
   current: true
-  headshot: "chris.jpg"
+  headshot: "chris.png"
+  linkedin: "https://www.linkedin.com/in/chrooks/"
+  website: "https://chrooks.com/"
 
 - name: "Jamie Camera"
   position: "Undergraduate Assistant"
