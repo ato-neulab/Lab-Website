@@ -2,97 +2,85 @@
 layout: "wrapper"
 ---
 
-<section class="people-text py-4">
-  <div class="container">
-    <p class="text-center">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime numquam
-      quis fuga natus nihil libero vel obcaecati sunt error. Consequatur eius
-      atque non sed aliquam, maxime veniam! Cumque, provident fugiat? Lorem
-      ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ratione fugit
-      sequi repellendus, fugiat culpa fuga inventore architecto saepe eaque
-      quasi et voluptatibus laborum aspernatur neque. Doloremque atque dolore
-      nam.
-    </p>
-  </div>
-</section>
-<section class="current-members py-4">
-  <div class="container d-flex align-items-center flex-column">
-    <h1>Current Members</h1>
-    <div
-      class="poloroid d-flex flex-column align-items-center justify-content-center shadow"
-    >
-      <div class="row">
-        <img
-          src="assets/images/headshots/ato.jpg"
-          alt="Alexandra To"
-          class="img-fluid headshot"
-        />
-      </div>
-      <div class="row">
-        <div class="col-8 poloroid-text">
-          <h2>Alexandra To</h2>
-          <span class="lab-title"> Lab Director</span>
-        </div>
-        <div class="col-4 poloroid-icons d-flex justify-content-end">
-          <a
-            href="https://www.linkedin.com/in/alexandra-to-02b42344/"
-            class="linkedin-icon"
-          >
-            <img src="assets/images/icons/linkedin.svg" alt="LinkedIn logo" />
-          </a>
-          <a href="https://www.alexandrato.com/" class="external-site-icon">
-            <img src="assets/images/icons/external.svg" alt="LinkedIn logo" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div
-      class="other-members d-flex justify-content-center flex-wrap mt-5 mb-3"
-    >
-      {% for person in site.data.people %} {% if person.current == true %}
+<div class="people">
+  <section class="current-members py-4">
+    <div class="container d-flex align-items-center flex-column">
+      <h1>Current Members</h1>
       <div
         class="poloroid d-flex flex-column align-items-center justify-content-center shadow"
       >
         <div class="row">
           <img
-            src="assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.png{% endif %}"
-            alt="{{ person.name }}"
+            src="assets/images/headshots/ato.jpg"
+            alt="Alexandra To"
             class="img-fluid headshot"
           />
         </div>
         <div class="row">
           <div class="col-8 poloroid-text">
-            <h2>{{ person.name }}</h2>
-            <span class="lab-position"> {{ person.position }}</span>
+            <h2>Alexandra To</h2>
+            <span class="lab-title"> Lab Director</span>
           </div>
           <div class="col-4 poloroid-icons d-flex justify-content-end">
-            {% if person.linkedin %}
-            <a href="{{ person.linkedin }}" class="linkedin-icon">
+            <a
+              href="https://www.linkedin.com/in/alexandra-to-02b42344/"
+              class="linkedin-icon"
+            >
               <img src="assets/images/icons/linkedin.svg" alt="LinkedIn logo" />
             </a>
-            {% endif %} 
-            {% if person.website %}
-            <a href="{{ person.website }}" class="external-site-icon">
-              <img
-                src="assets/images/icons/external.svg"
-                alt="External website logo"
-              />
+            <a href="https://www.alexandrato.com/" class="external-site-icon">
+              <img src="assets/images/icons/external.svg" alt="LinkedIn logo" />
             </a>
-            {% endif %}
           </div>
         </div>
       </div>
-      {% endif %} {% endfor %}
+      <div
+        class="other-members d-flex justify-content-center flex-wrap mt-5 mb-3"
+      >
+        {% for person in site.data.people %} {% if person.current == true %}
+        <div
+          class="poloroid d-flex flex-column align-items-center justify-content-center shadow"
+        >
+          <div class="row">
+            <img
+              src="assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.png{% endif %}"
+              alt="{{ person.name }}"
+              class="img-fluid headshot"
+            />
+          </div>
+          <div class="row">
+            <div class="col-8 poloroid-text">
+              <h2>{{ person.name }}</h2>
+              <span class="lab-position"> {{ person.position }}</span>
+            </div>
+            <div class="col-4 poloroid-icons d-flex justify-content-end">
+              {% if person.linkedin %}
+              <a href="{{ person.linkedin }}" class="linkedin-icon">
+                <img src="assets/images/icons/linkedin.svg" alt="LinkedIn logo" />
+              </a>
+              {% endif %} {% if person.website %}
+              <a href="{{ person.website }}" class="external-site-icon">
+                <img
+                  src="assets/images/icons/external.svg"
+                  alt="External website logo"
+                />
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endif %} {% endfor %}
+      </div>
     </div>
-  </div>
-</section>
-<section class="alumni py-4">
-  <div class="container d-flex align-items-center flex-column mb-2">
-    <h1>Lab Alumni</h1>
-    <ul>
-      {% for person in site.data.people %} {% if person.current == false %}
-      <li>{{ person.name }}</li>
-      {% endif %} {% endfor %}
-    </ul>
-  </div>
-</section>
+  </section>
+  <section class="alumni py-4">
+    <div class="container d-flex align-items-center flex-column mb-2">
+      <h1>Lab Alumni</h1>
+      <div class="container d-flex flex-column align-items-center">
+        {% for person in site.data.people %} {% if person.current == false %}
+        <h2>{{ person.name }}</h2>
+        {% endif %} {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

@@ -10,6 +10,12 @@
   headshot: "jailyn.png"
   linkedin: "https://www.linkedin.com/in/jailyn-z-2b322b13a/"
 
+- name: "Gianna Williams"
+  position: "PhD Student"
+  current: true
+  headshot: "gianna.png"
+  linkedin: https://www.linkedin.com/in/giannaewilliams/
+
 - name: "Josie Zvelebilova"
   position: "Graduate Student"
   current: true
@@ -20,11 +26,6 @@
   position: "Graduate Student"
   current: true
   headshot: "bethany.png"
-
-- name: "Gianna Williams"
-  position: "Graduate Student"
-  current: true
-  headshot: "gianna.png"
 
 - name: "Christopher Brooks"
   position: "Undergraduate Assistant"
@@ -42,7 +43,6 @@
 - name: "Lingqing Wang"
   position: "Undergraduate Assistant"
   current: true
-
 
 - name: "Jamie Camera"
   current: false
