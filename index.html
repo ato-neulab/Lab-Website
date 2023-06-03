@@ -1,0 +1,114 @@
+---
+layout: "wrapper"
+---
+
+<!-- This is a Jekyll front matter that specifies the layout for this page. -->
+
+<!-- This section is for the hero image. Bootstrap classes are used for positioning. -->
+<section class="hero d-flex justify-content-center">
+  <img
+    id="hero-img"
+    class="img-fluid"
+    src="assets/images/hero_banner.png"
+    alt="Group of students working in a computer lab"
+  />
+</section>
+
+<!-- This section is for the 'About' part of the site. -->
+<section class="about" id="about">
+  <div
+    class="container d-flex flex-column align-items-center justify-content-center py-5"
+  >
+    <div class="d-flex flex-column align-items-center about-heading">
+      <!-- This 'include' tag inserts content from the specified markdown file using Jekyll's Liquid templating engine. -->
+      {% include text-content/about-heading.md %}
+    </div>
+    <div class="text-center about-body mt-1 mb-2">
+      <!-- Similar 'include' tag for the body text in the 'About' section. -->
+      {% include text-content/about-body.md %}
+    </div>
+    <!-- This include is for a button. The 'alt' and 'classes' parameters are passed to the included HTML. -->
+    {% include button.html alt=false classes="about-button mb-3"%}
+  </div>
+</section>
+
+<!-- This section is for displaying different research areas of the lab -->
+<section class="research-areas">
+  <div class="container py-md-5 pt-5">
+    <div class="row">
+      <!-- Each 'ra-col' div represents one research area. -->
+      <!-- Bootstrap classes are used to adjust the layout for different screen sizes. -->
+      <div class="ra-col col-sm-12 col-md-4">
+        <!-- The rest of the HTML structure inside each 'ra-col' div is similar. -->
+        <div class="ra-card d-flex flex-column align-items-center">
+          <img
+            src="/assets/images/icons/keyboard.svg"
+            alt="Keyboard icon"
+            class="ra-card-icon"
+          />
+          <h2 class="mt-1">HCI</h2>
+          <p class="ra-description">
+            <!-- 'include' tag to insert a description for each research area. -->
+            {% include text-content/ra-hci.md %}
+          </p>
+        </div>
+      </div>
+      <!-- Similar structure for the second and third research area. -->
+      <div class="ra-col col-sm-12 col-md-4">
+        <div class="ra-card d-flex flex-column align-items-center">
+          <img
+            src="/assets/images/icons/controller.svg"
+            alt="Video game controller icon"
+            class="ra-card-icon"
+          />
+          <h2 class="mt-3">Design</h2>
+          <p class="ra-description">{% include text-content/ra-design.md %}</p>
+        </div>
+      </div>
+      <div class="ra-col col-sm-12 col-md-4">
+        <div class="ra-card d-flex flex-column align-items-center">
+          <img
+            src="/assets/images/icons/fist.svg"
+            alt="Fist icon"
+            class="ra-card-icon"
+          />
+          <h2 class="mt-3">Empowerment</h2>
+          <p class="ra-description">
+            {% include text-content/ra-empowerment.md %}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- This section is for a 'Get Involved' call to action. -->
+<section class="get-involved" id="get-involved">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-7 mb-sm-4">
+        <h2>Get Involved</h2>
+        <!-- This 'include' tag inserts the text content for this section. -->
+        <div class="gi-text mt-2 mb-4">
+          {% include text-content/gi-text.md %}
+        </div>
+        <!-- This is a button that links to an email address. -->
+        <button class="btn btn-cta" type="button">
+          <a href="mailto:ato.neulab@gmail.com">
+            <img src="/assets/images/icons/email.svg" alt="Mail icon" />
+            Email Us!
+          </a>
+        </button>
+      </div>
+      <!-- This div is for an image on the right side of the 'Get Involved' section. -->
+      <div class="col-sm-12 col-md-5">
+        <img
+          id="gi-img"
+          class="img-fluid my-2"
+          src="assets/images/gi-image.png"
+          alt="Cartoon image of woman typing at laptop"
+        />
+      </div>
+    </div>
+  </div>
+</section>
