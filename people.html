@@ -10,7 +10,7 @@ title: "Meet the People"
       <h1>Current Members</h1>
       <!-- 'div' for a specific person, Alexandra in this case. Styled like a polaroid photo. -->
       <div
-        class="poloroid d-flex flex-column align-items-center justify-content-center shadow"
+        class="polaroid d-flex flex-column align-items-center justify-content-center shadow"
       >
         <div class="row">
           <!-- 'img' tag for headshot. -->
@@ -21,12 +21,12 @@ title: "Meet the People"
           />
         </div>
         <div class="row">
-          <div class="col-8 poloroid-text">
+          <div class="col-8 polaroid-text">
             <!-- 'h2' tag for name and a 'span' tag for position. -->
             <h2>Alexandra To</h2>
             <span class="lab-title"> Lab Director</span>
           </div>
-          <div class="col-4 poloroid-icons d-flex justify-content-end">
+          <div class="col-4 polaroid-icons d-flex justify-content-end">
             <!-- Links to person's LinkedIn profile and personal website. The icons are styled as clickable links. -->
             <a
               href="https://www.linkedin.com/in/alexandra-to-02b42344/"
@@ -49,7 +49,7 @@ title: "Meet the People"
         <!-- Also checks if the person has a LinkedIn profile or personal website, and includes the icons if they do. -->
         {% for person in site.data.people %} {% if person.current == true %}
         <div
-          class="poloroid d-flex flex-column align-items-center justify-content-center shadow"
+          class="polaroid d-flex flex-column align-items-center justify-content-center shadow"
         >
           <div class="row">
             <img
@@ -59,11 +59,11 @@ title: "Meet the People"
             />
           </div>
           <div class="row">
-            <div class="col-8 poloroid-text">
+            <div class="col-8 polaroid-text">
               <h2>{{ person.name }}</h2>
               <span class="lab-position"> {{ person.position }}</span>
             </div>
-            <div class="col-4 poloroid-icons d-flex justify-content-end">
+            <div class="col-4 polaroid-icons d-flex justify-content-end">
               {% if person.linkedin %}
               <a href="{{ person.linkedin }}" class="linkedin-icon">
                 <img

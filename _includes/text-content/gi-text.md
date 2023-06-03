@@ -1,3 +1,6 @@
+<!-- C -->
+<!-- Do not remove any tags, just edit the text in between -->
+
 <p>
 If you are interested in joining our lab as a PhD student supervised by Prof. To, she can speak with PhD students looking for an advisor or co-advisor in CAMD (e.g., Interdisciplinary Design and Media PhD) or Khoury (e.g., Computer Science PhD). 
 In an email to the lab, please include your interests, program, CV, and why you think we might be a good fit.
