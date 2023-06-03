@@ -10,9 +10,9 @@ A static website made with Jekyll for the ATo Lab, a multidisciplinary research 
 
 **Jekyll** (HTML, Sass, Bootstrap, Liquid) - Implementation
 
-**Figma** - Design Mockup
+**Figma** - Design Prototype
 
-**Midjourney** - Image Generation
+**Midjourney** - Image Generation, Mockups
 
 [**Realtime Colors**](https://realtimecolors.com/) - Color Palette
 
@@ -24,10 +24,9 @@ A static website made with Jekyll for the ATo Lab, a multidisciplinary research 
 4. Use Realtime Colors to decide on a palette
 5. Use Midjourney to generate mockups to take inspiration from
 6. Design prototype in Figma
-7. Photoshop to crop photos
-8. Must be square (1:1 aspect ratio)
-9. Implement prototype using Jekyll
-10. Write documentation explaining how it works and how to update
+7. Cropped headshot image files using Photoshop
+8. Implement prototype using Jekyll
+9.  Write documentation explaining how it works and how to update
 
 ## How it works
 
