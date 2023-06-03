@@ -1,3 +1,6 @@
+<!-- 'include.alt' and 'include.classes' are variables passed to the include. -->
+<!-- The conditional checks if the 'alt' variable is true. If it is, it adds '-alt' to the class, which changes the button color. -->
+<!-- The other conditional checks if the 'classes' variable is set. If it is, it adds the specified classes to the button. -->
 <button
   class="btn btn-cta{% if include.alt %}-alt{% endif %}{% if include.classes %} {{ include.classes }}{% endif %}"
   type="button"

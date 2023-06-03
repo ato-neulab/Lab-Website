@@ -1,7 +1,9 @@
 <div class="header">
+  <!-- This row contains a navbar contianing links to the different pages of the website -->
   <nav class="navbar navbar-expand-lg mb-2">
     <div class="container">
       <a class="navbar-brand" href="/">
+        <!-- 'div' for the logo. It contains two logos, one white the other brown. When hovered, the white logo fades away. -->
         <div class="logo-container">
           <img
             class="lab-logo-top"
@@ -15,6 +17,7 @@
           />
         </div>
       </a>
+      <!-- 'button' for the responsive navbar toggle. Visible only on smaller screens. -->
       <button
         class="navbar-toggler"
         type="button"
@@ -26,6 +29,8 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Contains the actual navbar links. It collapses on smaller screens. -->
       <div
         class="collapse navbar-collapse justify-content-center"
         id="navbarNav"
@@ -44,6 +49,7 @@
             <a class="nav-link" href="/404.html">Publications</a>
           </li>
           <li class="nav-item">
+            <!-- Includes a white call-to-action button with some additional classes -->
             {% include button.html alt=true classes="d-lg-none d-inline-block"%}
           </li>
         </ul>
@@ -51,6 +57,7 @@
       {% include button.html alt=true classes="d-lg-inline-block d-none"%}
     </div>
   </nav>
+  <!-- This row contains a title that tries to match the title of the current page. Defaults to site title if not. -->
   <div class="row py-3">
     <div class="col text-center">
       <h1>

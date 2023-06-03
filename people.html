@@ -1,15 +1,19 @@
 ---
 layout: "wrapper"
+title: "Meet the People"
 ---
 
 <div class="people">
+  <!-- 'section' for the current members of the team. -->
   <section class="current-members py-4">
     <div class="container d-flex align-items-center flex-column">
       <h1>Current Members</h1>
+      <!-- 'div' for a specific person, Alexandra in this case. Styled like a polaroid photo. -->
       <div
         class="poloroid d-flex flex-column align-items-center justify-content-center shadow"
       >
         <div class="row">
+          <!-- 'img' tag for headshot. -->
           <img
             src="assets/images/headshots/ato.jpg"
             alt="Alexandra To"
@@ -18,10 +22,12 @@ layout: "wrapper"
         </div>
         <div class="row">
           <div class="col-8 poloroid-text">
+            <!-- 'h2' tag for name and a 'span' tag for position. -->
             <h2>Alexandra To</h2>
             <span class="lab-title"> Lab Director</span>
           </div>
           <div class="col-4 poloroid-icons d-flex justify-content-end">
+            <!-- Links to person's LinkedIn profile and personal website. The icons are styled as clickable links. -->
             <a
               href="https://www.linkedin.com/in/alexandra-to-02b42344/"
               class="linkedin-icon"
@@ -37,6 +43,10 @@ layout: "wrapper"
       <div
         class="other-members d-flex justify-content-center flex-wrap mt-5 mb-3"
       >
+        <!-- Liquid 'for' loop iterating thru the 'people' data file and creating a similar layout for each person marked as a current member. -->
+        <!-- Similar layout as before, but the data is dynamically inserted using Liquid tags. -->
+        <!-- Checks if the person has a linked headshot picture, uses a generic default if not. -->
+        <!-- Also checks if the person has a LinkedIn profile or personal website, and includes the icons if they do. -->
         {% for person in site.data.people %} {% if person.current == true %}
         <div
           class="poloroid d-flex flex-column align-items-center justify-content-center shadow"
@@ -56,7 +66,10 @@ layout: "wrapper"
             <div class="col-4 poloroid-icons d-flex justify-content-end">
               {% if person.linkedin %}
               <a href="{{ person.linkedin }}" class="linkedin-icon">
-                <img src="assets/images/icons/linkedin.svg" alt="LinkedIn logo" />
+                <img
+                  src="assets/images/icons/linkedin.svg"
+                  alt="LinkedIn logo"
+                />
               </a>
               {% endif %} {% if person.website %}
               <a href="{{ person.website }}" class="external-site-icon">
@@ -73,6 +86,9 @@ layout: "wrapper"
       </div>
     </div>
   </section>
+
+  <!-- 'section' for the team alumni. -->
+  <!-- It works similarly to the current members section, but it only includes people marked as non-current members in the data file. -->
   <section class="alumni py-4">
     <div class="container d-flex align-items-center flex-column mb-2">
       <h1>Lab Alumni</h1>
