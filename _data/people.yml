@@ -1,9 +1,3 @@
-- name: "Dilruba Showkat"
-  position: "PhD Student"
-  current: true
-  headshot: "dilruba.png"
-  website: "https://scholar.google.com/citations?user=g7wnqBgAAAAJ&hl=en"
-
 - name: "Jailyn Zabala"
   position: "PhD Student"
   current: true
@@ -16,31 +10,18 @@
   headshot: "gianna.png"
   linkedin: https://www.linkedin.com/in/giannaewilliams/
 
-- name: "Josie Zvelebilova"
-  position: "Graduate Student"
-  current: true
-  headshot: "josie.png"
-  linkedin: "https://www.linkedin.com/in/josiezvelebilova"
-
 - name: "Bethany Turay"
   position: "Graduate Student"
   current: true
   headshot: "bethany.png"
 
-- name: "Christopher Brooks"
-  position: "Undergraduate Assistant"
+- name: "Kaumudi Rawal"
   current: true
-  headshot: "chris.png"
-  linkedin: "https://www.linkedin.com/in/chrooks/"
-  website: "https://chrooks.com/"
 
-- name: "Laveda Chan"
-  position: "Undergraduate Assistant"
+- name: "Jessica Teurn"
   current: true
-  headshot: "laveda.png"
-  linkedin: "https://www.linkedin.com/in/lavedachan/"
 
-- name: "Lingqing Wang"
+- name: "Tris Wong"
   position: "Undergraduate Assistant"
   current: true
 
@@ -84,4 +65,31 @@
   current: false
 
 - name: "Shipra Chirag Shah"
+  current: false
+
+- name: "Dilruba Showkat"
+  current: false
+
+- name: "Christopher Brooks"
+  position: "Undergraduate Assistant"
+  current: false
+  headshot: "chris.png"
+  linkedin: "https://www.linkedin.com/in/chrooks/"
+  website: "https://chrooks.com/"
+
+- name: "Josie Zvelebilova"
+  position: "Graduate Student"
+  current: false
+  headshot: "josie.png"
+  linkedin: "https://www.linkedin.com/in/josiezvelebilova"
+
+- name: "Laveda Chan"
+  position: "Undergraduate Assistant"
+  current: false
+
+- name: "Lingqing Wang"
+  position: "Undergraduate Assistant"
+  current: false
+
+- name: "Soni Rusagara"
   current: false
