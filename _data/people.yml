@@ -1,28 +1,31 @@
 - name: "Jailyn Zabala"
-  position: "PhD Student"
+  position: "PhD Candidate"
   current: true
   headshot: "jailyn.png"
   linkedin: "https://www.linkedin.com/in/jailyn-z-2b322b13a/"
 
 - name: "Gianna Williams"
-  position: "PhD Student"
+  position: "PhD Candidate"
   current: true
   headshot: "gianna.png"
   linkedin: https://www.linkedin.com/in/giannaewilliams/
 
 - name: "Bethany Turay"
-  position: "Graduate Student"
+  position: "PhD Candidate"
   current: true
   headshot: "bethany.png"
 
-- name: "Kaumudi Rawal"
+  - name: "Jessica Teurn"
+  position: "PhD Student"
   current: true
 
-- name: "Jessica Teurn"
+- name: "Kaumudi Rawal"
+position: "Research Assistant"
   current: true
+
 
 - name: "Tris Wong"
-  position: "Undergraduate Assistant"
+  position: "Research Assistant"
   current: true
 
 - name: "Jamie Camera"
