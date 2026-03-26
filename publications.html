@@ -1,0 +1,24 @@
+---
+layout: "wrapper"
+title: Selected Publications
+permalink: /publications
+---
+
+<div class="publications">
+    <section class="publication-list pt-5 pb-3">
+        <!-- Liquid 'for' loop iterating thru the 'publications' data file and creating a similar layout for each publication. -->
+        <!-- Checks if the publication has a hyperlink. If does, hovering over it causes it to turn a different color-->
+        {% for publication in site.data.publications %}
+        <div class="individual-publication text-left container w-75 py-2">
+            {% if publication.link %}
+            <a class="hover-link" href="{{ publication.link }}">{{ publication.title }}</a>
+            {% else %}
+            <a>{{ publication.title }}</a>
+            {% endif %}
+        </div>
+        {% endfor %}
+        
+        <p class="text-center pt-3">Last Updated: March 2026</p>
+    </section>
+</div>
+
