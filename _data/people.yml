@@ -10,7 +10,7 @@
   headshot: "gianna.png"
   linkedin: https://www.linkedin.com/in/giannaewilliams/
 
-- name: "Bethany Turay"
+- name: "Bethany Miatta Turay"
   position: "Graduate Student"
   current: true
   headshot: "bethany.png"
@@ -24,6 +24,8 @@
 - name: "Tris Wong"
   position: "Undergraduate Assistant"
   current: true
+  headshot: "tris.png"
+  linkedin: "https://www.linkedin.com/in/triston-wong/"
 
 - name: "Jamie Camera"
   current: false
