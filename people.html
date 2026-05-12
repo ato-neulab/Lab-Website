@@ -87,6 +87,20 @@ title: "Meet the People"
     </div>
   </section>
 
+
+  <!-- 'section' for the lab affiliates. -->
+  <!-- It works similarly to the current members section, but it only includes people marked as lab affiliates in the data file. -->
+  <section class="affiliates py-4">
+    <div class="container d-flex align-items-center flex-column mb-2">
+      <h1>Lab Affiliates</h1>
+      <div class="container d-flex flex-column align-items-center">
+        {% for person in site.data.people %} {% if person.status == "lab_affiliate" %}
+        <h2>{{ person.name }}</h2>
+        {% endif %} {% endfor %}
+      </div>
+    </div>
+  </section>
+
   <!-- 'section' for the team alumni. -->
   <!-- It works similarly to the current members section, but it only includes people marked as non-current members in the data file. -->
   <section class="alumni py-4">

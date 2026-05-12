@@ -12,12 +12,16 @@
   website: https://gwillia1111.github.io/MySite/
 
 - name: "Bethany Miatta Turay"
-  position: "Graduate Student"
+  position: "PhD Candidate"
   current: true
   headshot: "bethany.png"
   linkedin: https://www.linkedin.com/in/bethany-miatta-turay-6712b7253
 
 - name: "Jessica Teurn"
+  position: "PhD Student"
+  current: true
+
+- name: "Naomi Ruchugo"
   position: "PhD Student"
   current: true
 
@@ -30,6 +34,12 @@
   current: true
   headshot: "tris.png"
   linkedin: "https://www.linkedin.com/in/triston-wong/"
+
+- name: "Feifei Shen"
+  status: "lab_affiliate"
+
+- name: "Kutub Gandhi"
+  status: "lab_affiliate"
 
 - name: "Jamie Camera"
   current: false

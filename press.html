@@ -1,0 +1,53 @@
+---
+layout: "wrapper"
+title: "News"
+permalink: /press
+---
+<section class="press">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Each 'ra-col' div represents one piece of media. -->
+        <!-- Bootstrap classes are used to adjust the layout for different screen sizes. -->
+        <!-- Liquid 'for' loop iterating thru the 'press' data file and creating a similar layout for each piece of media. -->
+        <div class="news d-flex justify-content-center flex-wrap mt-5 mb-3">
+            {% for press in site.data.press %}
+            <div class="press-item d-flex flex-column align-items-center">
+                <a class="hover-link" href="{{ press.link }}">
+                    <!-- all images should have a 3 : 2 aspect ratio -->
+                    {% if press.image %}
+                    <div class="row">
+                        <img
+                        src="assets/images/press/{{ press.image }}"
+                        alt="press picture"
+                        class="img-fluid press-image"
+                        />
+                    </div>
+                    <div class="spacer pb-2"></div>
+                    <div class="row">
+                        <div class="press-title mx-1">
+                            {{ press.title }}
+                        </div>
+
+                        <div class="press-date py-2 mx-1">
+                            {{ press.published }}
+                        </div>
+                    </div>
+
+                    <!-- Separate formatting for press without associated images -->
+                    {% else %}
+                    <div class="row">
+                        <div class="press-title mx-1">
+                            {{ press.title }}
+                        </div>
+
+                        <div class="press-date py-2 mx-1">
+                            {{ press.published }}
+                        </div>
+                    </div>
+                    {% endif %}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <p class="text-center pt-5">Last Updated: May 2026</p>
+</section>
