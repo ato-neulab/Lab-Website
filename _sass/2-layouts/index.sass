@@ -3,10 +3,10 @@ section
   width: 100%
 
   &:nth-child(even)
-    background-color: $white
+    background-color: $off-white
 
   &:nth-child(odd)
-    background-color: $off-white
+    background-color: $white
 
 .hero
   width: 100vw
@@ -15,32 +15,47 @@ section
   margin: 0
 
 .about
-  .about-heading
+  padding: 0rem
+  color: $black
+
+  .about-mission
+    width: 30rem
+    text-align: center
+
     h1
       font-size: 2rem
       line-height: 120%
-      text-align: center
-      color: $brown
+      color: $black
 
       @media screen and (max-width: 768px)
         font-size: 1.75rem
 
-      &:nth-child(even)
-        color: $red
-  .about-body
-    width: 65%
-
+    @media screen and (max-width: 1300px)
+      width: min(100%, 30rem)
+      text-align: center
+      margin-inline: auto
+  
 .research-areas
+  padding: 1rem
+
+  h1
+    font-size: 2rem
+
   .ra-col
     .ra-card
       height: 90%
-      min-height: 510px
-      padding: 1.5rem 0 2rem
-      border-top: 2px solid $brown
-      border-bottom: 2px solid $brown
+      min-height: 520px
+      padding: 1.5rem 0 1.5rem
+      border-top: 2px solid $black
+      border-bottom: 2px solid $black
+      
+      .ra-card-icon
+        width: 3rem
+        filter: invert(37%) sepia(71%) saturate(354%) hue-rotate(110deg) brightness(96%) contrast(94%)
 
       h2
-        color: $red
+        color: $black
+        font-family: 'Cal Sans Text', sans-serif
 
       .ra-description
         width: 75%
@@ -60,3 +75,21 @@ section
         justify-content: center
         padding: 0
         min-height: 450px
+
+  
+.get-involved
+  padding: 1rem
+
+  .get-involved-image
+    max-width: 40rem
+    width: 100%
+    height: auto
+    margin-right: 0.5rem
+    border-radius: 0.1rem
+
+  @media screen and (max-width: 768px)
+    .get-involved-image
+      max-width: 100%
+      margin-right: 0
+      margin-bottom: 1rem
+

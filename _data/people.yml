@@ -1,29 +1,38 @@
+- name: "Alexandra To"
+  position: "Lab Director"
+  current: true
+  headshot: "ato.webp"
+  linkedin: "https://www.linkedin.com/in/alexandra-to-02b42344/"
+  website: "https://www.alexandrato.com/"
+
 - name: "Jailyn Zabala"
   position: "PhD Candidate"
   current: true
-  headshot: "jailyn.png"
+  headshot: "jailyn.webp"
   linkedin: "https://www.linkedin.com/in/jailyn-z-2b322b13a/"
 
 - name: "Gianna Williams"
   position: "PhD Candidate"
   current: true
-  headshot: "gianna.png"
+  headshot: "gianna.webp"
   linkedin: https://www.linkedin.com/in/giannaewilliams/
   website: https://gwillia1111.github.io/MySite/
 
 - name: "Bethany Miatta Turay"
   position: "PhD Candidate"
   current: true
-  headshot: "bethany.png"
+  headshot: "bethany.webp"
   linkedin: https://www.linkedin.com/in/bethany-miatta-turay-6712b7253
 
 - name: "Jessica Teurn"
   position: "PhD Student"
   current: true
+  headshot: "jessica.webp"
 
 - name: "Naomi Ruchugo"
   position: "PhD Student"
   current: true
+  headshot: "naomi.webp"
 
 - name: "Kaumudi Rawal"
   position: "Research Assistant"
@@ -32,7 +41,7 @@
 - name: "Tris Wong"
   position: "Research Assistant"
   current: true
-  headshot: "tris.png"
+  headshot: "tris.webp"
   linkedin: "https://www.linkedin.com/in/triston-wong/"
 
 - name: "Feifei Shen"
@@ -41,49 +50,13 @@
 - name: "Kutub Gandhi"
   status: "lab_affiliate"
 
-- name: "Jamie Camera"
-  current: false
-
 - name: "Doxa Asibey"
-  current: false
-
-- name: "Heng Su"
-  current: false
-
-- name: "Xinyu Hou"
-  current: false
-
-- name: "Devina Raithatha"
-  current: false
-
-- name: "Jahaan Saini"
-  current: false
-
-- name: "Maeve Singer"
-  current: false
-
-- name: "Srinivas Teja Bhattar"
-  current: false
-
-- name: "Shipra Shah"
-  current: false
-
-- name: "Rafal Smietana"
   current: false
 
 - name: "Shereen Bellamy"
   current: false
 
-- name: "Natalie Chen"
-  current: false
-
-- name: "Audrey Lehrer"
-  current: false
-
-- name: "Shipra Chirag Shah"
-  current: false
-
-- name: "Dilruba Showkat"
+- name: "Srinivas Teja Bhattar"
   current: false
 
 - name: "Christopher Brooks"
@@ -93,19 +66,52 @@
   linkedin: "https://www.linkedin.com/in/chrooks/"
   website: "https://chrooks.com/"
 
-- name: "Josie Zvelebilova"
-  position: "Graduate Student"
+- name: "Jamie Camera"
   current: false
-  headshot: "josie.png"
-  linkedin: "https://www.linkedin.com/in/josiezvelebilova"
 
 - name: "Laveda Chan"
   position: "Undergraduate Assistant"
+  current: false
+
+- name: "Natalie Chen"
+  current: false
+
+- name: "Xinyu Hou"
+  current: false
+
+- name: "Audrey Lehrer"
+  current: false
+
+- name: "Devina Raithatha"
+  current: false
+
+- name: "Soni Rusagara"
+  current: false
+
+- name: "Jahaan Saini"
+  current: false
+
+- name: "Shipra Chirag Shah"
+  current: false
+
+- name: "Dilruba Showkat"
+  current: false
+
+- name: "Maeve Singer"
+  current: false
+
+- name: "Rafal Smietana"
+  current: false
+
+- name: "Heng Su"
   current: false
 
 - name: "Lingqing Wang"
   position: "Undergraduate Assistant"
   current: false
 
-- name: "Soni Rusagara"
+- name: "Josie Zvelebilova"
+  position: "Graduate Student"
   current: false
+  headshot: "josie.png"
+  linkedin: "https://www.linkedin.com/in/josiezvelebilova"

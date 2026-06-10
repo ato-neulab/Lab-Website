@@ -1,34 +1,20 @@
 ---
+title: "About"
 layout: "wrapper"
 ---
 
 <!-- This is a Jekyll front matter that specifies the layout for this page. -->
 
-<!-- This section is for the hero image. Bootstrap classes are used for positioning. -->
-<!-- <section class="hero d-flex justify-content-center">
-  <img
-    id="hero-img"
-    class="img-fluid"
-    src="assets/images/hero_banner.png"
-    alt="Group of students working in a computer lab"
-  />
-</section> -->
-
 <!-- This section is for the 'About' part of the site. -->
-<section class="about" id="about">
-  <div
-    class="container d-flex flex-column align-items-center justify-content-center py-5"
+<section class="about">
+  <div 
+    class="container d-flex flex-row flex-wrap align-items-center justify-content-center py-5"
   >
-    <div class="d-flex flex-column align-items-center about-heading">
+    <div class="d-flex flex-column align-items-center about-mission">
       <!-- This 'include' tag inserts content from the specified markdown file using Jekyll's Liquid templating engine. -->
-      {% include text-content/about-heading.md %}
+      <h1>Our Mission</h1>
+      {% include text-content/about-mission.md %}
     </div>
-    <div class="text-center about-body mt-1 mb-2">
-      <!-- Similar 'include' tag for the body text in the 'About' section. -->
-      {% include text-content/about-body.md %}
-    </div>
-    <!-- This include is for a button. The 'alt' and 'classes' parameters are passed to the included HTML. -->
-    {% include button.html alt=false classes="about-button mb-3"%}
   </div>
 </section>
 
@@ -46,7 +32,7 @@ layout: "wrapper"
             alt="Keyboard icon"
             class="ra-card-icon"
           />
-          <h2 class="mt-1">HCI</h2>
+          <h3>HCI</h3>
           <p class="ra-description">
             <!-- 'include' tag to insert a description for each research area. -->
             {% include text-content/ra-hci.md %}
@@ -61,18 +47,18 @@ layout: "wrapper"
             alt="Video game controller icon"
             class="ra-card-icon"
           />
-          <h2 class="mt-3">Design</h2>
+          <h3>Design</h3>
           <p class="ra-description">{% include text-content/ra-design.md %}</p>
         </div>
       </div>
       <div class="ra-col col-sm-12 col-md-4">
         <div class="ra-card d-flex flex-column align-items-center">
           <img
-            src="/assets/images/icons/fist.svg"
-            alt="Fist icon"
+            src="/assets/images/icons/diversity_2_24dp_287F64_FILL0_wght400_GRAD0_opsz24.svg"
+            alt="Together icon"
             class="ra-card-icon"
           />
-          <h2 class="mt-3">Empowerment</h2>
+          <h3>Empowerment</h3>
           <p class="ra-description">
             {% include text-content/ra-empowerment.md %}
           </p>
@@ -85,17 +71,20 @@ layout: "wrapper"
 <!-- This section is for a 'Get Involved' call to action. -->
 <section class="get-involved" id="get-involved">
   <div class="container py-5">
-    <div class="row">
-      <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-sm-12 col-md-5 d-flex justify-content-center">
+        <img src="/assets/images/pages/about/get-involved.jpg" alt="Get Involved Picture" class="get-involved-image img-fluid">
+      </div>
+      <div class="col-sm-12 col-md-7">
         <h2>Get Involved</h2>
         <!-- This 'include' tag inserts the text content for this section. -->
-        <div class="gi-text mt-2 mb-4">
+        <div class="mt-2 mb-4">
           {% include text-content/gi-text.md %}
         </div>
         <!-- This is a button that links to an email address. -->
         <button class="btn btn-cta" type="button">
           <a href="mailto:ato.neulab@gmail.com">
-            <img src="/assets/images/icons/email.svg" alt="Mail icon" />
+            <img src="/assets/images/icons/email.svg" alt="Mail icon"/>
             Email Us!
           </a>
         </button>
@@ -105,7 +94,7 @@ layout: "wrapper"
         <img
           id="gi-img"
           class="img-fluid my-2"
-          src="assets/images/gi-image.png"
+          src="/assets/images/pages/about/get-involved.jpg"
           alt="Cartoon image of woman typing at laptop"
         />
       </div> -->

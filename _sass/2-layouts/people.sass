@@ -1,6 +1,5 @@
 .people
   h1
-    text-align: center
     font-size: 2rem
 
   section
@@ -10,53 +9,37 @@
     &:nth-child(odd)
       background-color: $white
 
-  .current-members
+  .current-members, .affiliates
 
     .polaroid
-      background: $white
       padding: 1rem
 
-      .row
-        width: 100%
-        padding: 0
+      .headshot
+        width: 250px
+        height: 250px
+        max-width: none
+        object-fit: cover
+        display: block
+        margin-right: 1rem
 
-        .headshot
-          max-width: 350px
-          padding: 0 0 1rem 0
+      .polaroid-text
+        padding-left: 0
+        h2
+          font-family: 'Cal Sans UI'
+          font-size: 1rem
+          color: $black
+          margin-bottom: 0
+      
+      .current-members-name-text
+        font-weight: bold
+        width: 7rem
 
-        .polaroid-text
-          padding-left: 0
-          h2
-            font-size: 1rem
-            color: $brown
-            margin-bottom: 0
-
-        .polaroid-icons
-          padding-right: 0
-          a img
-            height: 24px
-          .external-site-icon
-            margin-left: 0.75em
-          
-    .other-members .polaroid
-      margin: 0.5rem
-
-  
-  .affiliates
-    .container
-      width: 50%
-      margin-top: 1rem
-      text-align: center
-
-      h2
-        margin-bottom: 1.5rem
-        font-size: 1rem
-        color: $brown
-        margin-bottom: 1rem
-
-        &:nth-child(even)
-          color: $red
-
+      .polaroid-icons
+        padding-right: 0
+        a img
+          height: 20px
+        .external-site-icon
+          margin-left: 0.75em
 
   .alumni
     .container
@@ -66,9 +49,10 @@
 
       h2
         margin-bottom: 1.5rem
+        font-family: 'Cal Sans UI'
         font-size: 1rem
-        color: $brown
+        color: $green
         margin-bottom: 1rem
 
         &:nth-child(even)
-          color: $red
+          color: $green

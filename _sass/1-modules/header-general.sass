@@ -1,0 +1,74 @@
+.header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 1000
+  background-color: rgba(0, 0, 0, 0.0)
+  font-family: 'Cal Sans Text', sans-serif
+
+  .logo-container
+    position: relative
+    width: 4rem
+    height: 4rem
+    margin-left: 1rem
+
+    img
+      position: absolute
+      width: 100%
+      height: 100%
+
+  .navbar-toggler-icon
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(83, 145, 126, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+    border-color: $green
+
+  .collapse .nav-link
+    margin-left: 1em
+    margin-right: 1em
+
+  .collapse.show .nav-link
+    margin: 0 0
+
+  @media screen and (max-width: 991.98px)
+    .navbar-collapse.show
+      background-color: $white
+      padding: 1rem
+      border-radius: 0 0 1rem 1rem
+
+    .navbar-nav
+      width: 100%
+
+  .nav-link:hover
+    color: $green
+
+  h1
+    color: $white
+    font-family: 'Cal Sans Text'
+    font-weight: bold
+    font-size: 3rem
+    @media screen and (max-width: 768px)
+      font-size: 2.5rem
+
+  .nav-link
+    color: $green
+    text-decoration: none
+    transition: all 0.3s ease-in-out
+
+    &:hover
+      transform: translateY(-4px)
+      color: $black
+
+  // Ensure interactive elements sit above the hero image
+  .nav-link,
+  .btn,
+  .navbar-toggler,
+  .navbar-toggler-icon
+    position: relative
+    z-index: 1100
+
+  .btn-cta-alt
+    &:hover
+      background-color: $green
+
+      a
+        color: $off-white

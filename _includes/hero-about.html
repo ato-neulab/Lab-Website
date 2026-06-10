@@ -1,0 +1,19 @@
+<div class="about-hero">
+        {% for banner in site.data.hero-banners %}
+            {% if banner.page_name == page.title %}
+            
+                <div class="hero-banner">
+                    <img
+                        src="assets/images/hero-banners-2026/{{ banner.image }}"
+                        alt="{{ banner.page_name }}"
+                        class="img-fluid headshot">
+                    <h1 class="hero-heading">
+                        {{ banner.optional_replacement_name | default: banner.page_name }}
+                    </h1>
+                    <h3 class="hero-subheading align-items-center">
+                        {{ banner.subheading }}
+                    </h3>
+                </div>
+            {% endif %}
+        {% endfor %}
+</div>

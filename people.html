@@ -1,47 +1,42 @@
 ---
 layout: "wrapper"
-title: "Meet the People"
+title: "People"
 ---
 
 <div class="people">
   <!-- 'section' for the current members of the team. -->
   <section class="current-members py-4">
     <div class="container d-flex align-items-center flex-column">
-      <h1>Current Members</h1>
+      <h1 class="col-sm-12">Current Members</h1>
       <!-- 'div' for a specific person, Alexandra in this case. Styled like a polaroid photo. -->
-      <div
-        class="polaroid d-flex flex-column align-items-center justify-content-center shadow"
-      >
-        <div class="row">
-          <!-- 'img' tag for headshot. -->
+      <!-- <div class="polaroid d-flex flex-row justify-content-center">
+        <div class="d-flex justify-content-flex-start">
           <img
-            src="assets/images/headshots/ato.jpg"
+            src="assets/images/headshots/ato.webp"
             alt="Alexandra To"
             class="img-fluid headshot"
           />
         </div>
-        <div class="row">
-          <div class="col-8 polaroid-text">
-            <!-- 'h2' tag for name and a 'span' tag for position. -->
-            <h2>Alexandra To</h2>
-            <span class="lab-title"> Lab Director</span>
+        <div>
+          <div class="polaroid-text">
+            <span>Alexandra To</span>
           </div>
-          <div class="col-4 polaroid-icons d-flex justify-content-end">
-            <!-- Links to person's LinkedIn profile and personal website. The icons are styled as clickable links. -->
-            <a
-              href="https://www.linkedin.com/in/alexandra-to-02b42344/"
-              class="linkedin-icon"
-            >
+          <div class="polaroid-text">
+            <span>Lab Director</span>
+          </div>
+          <div class="polaroid-icons d-flex">
+            Links to person's LinkedIn profile and personal website. The icons are styled as clickable links.
+            <a href="https://www.linkedin.com/in/alexandra-to-02b42344/" class="linkedin-icon">
               <img src="assets/images/icons/linkedin.svg" alt="LinkedIn logo" />
             </a>
             <a href="https://www.alexandrato.com/" class="external-site-icon">
-              <img src="assets/images/icons/external.svg" alt="LinkedIn logo" />
+              <img src="assets/images/icons/external.svg" alt="External website icon" />
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
       <div
-        class="other-members d-flex justify-content-center flex-wrap mt-5 mb-3"
+        class="d-flex justify-content-center flex-wrap"
       >
         <!-- Liquid 'for' loop iterating thru the 'people' data file and creating a similar layout for each person marked as a current member. -->
         <!-- Similar layout as before, but the data is dynamically inserted using Liquid tags. -->
@@ -49,21 +44,24 @@ title: "Meet the People"
         <!-- Also checks if the person has a LinkedIn profile or personal website, and includes the icons if they do. -->
         {% for person in site.data.people %} {% if person.current == true %}
         <div
-          class="polaroid d-flex flex-column align-items-center justify-content-center shadow"
+          class="polaroid d-flex flex-row justify-content-center"
         >
-          <div class="row">
+          <div class="d-flex justify-content-flex-start">
             <img
-              src="assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.png{% endif %}"
+              src="assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.webp{% endif %}"
               alt="{{ person.name }}"
               class="img-fluid headshot"
             />
           </div>
-          <div class="row">
-            <div class="col-8 polaroid-text">
-              <h2>{{ person.name }}</h2>
-              <span class="lab-position"> {{ person.position }}</span>
+          <div>
+            <div class="polaroid-text current-members-name-text">
+              <span>{{ person.name }}</span>
             </div>
-            <div class="col-4 polaroid-icons d-flex justify-content-end">
+            <div class="polaroid-text">
+              <span>{{ person.position }}</span>
+            </div>
+
+            <div class="polaroid-icons d-flex">
               {% if person.linkedin %}
               <a href="{{ person.linkedin }}" class="linkedin-icon">
                 <img
@@ -75,7 +73,7 @@ title: "Meet the People"
               <a href="{{ person.website }}" class="external-site-icon">
                 <img
                   src="assets/images/icons/external.svg"
-                  alt="External website logo"
+                  alt="External website icon"
                 />
               </a>
               {% endif %}
@@ -91,11 +89,53 @@ title: "Meet the People"
   <!-- 'section' for the lab affiliates. -->
   <!-- It works similarly to the current members section, but it only includes people marked as lab affiliates in the data file. -->
   <section class="affiliates py-4">
-    <div class="container d-flex align-items-center flex-column mb-2">
-      <h1>Lab Affiliates</h1>
-      <div class="container d-flex flex-column align-items-center">
+    <div class="container d-flex align-items-center flex-column">
+      <h1 class="col-sm-12">Lab Affiliates</h1>
+      <div
+        class="d-flex justify-content-center flex-wrap"
+      >
+        <!-- Liquid 'for' loop iterating thru the 'people' data file and creating a similar layout for each person marked as a current member. -->
+        <!-- Similar layout as before, but the data is dynamically inserted using Liquid tags. -->
+        <!-- Checks if the person has a linked headshot picture, uses a generic default if not. -->
+        <!-- Also checks if the person has a LinkedIn profile or personal website, and includes the icons if they do. -->
         {% for person in site.data.people %} {% if person.status == "lab_affiliate" %}
-        <h2>{{ person.name }}</h2>
+        <div
+          class="polaroid d-flex flex-row justify-content-center"
+        >
+          <div class="d-flex justify-content-flex-start">
+            <img
+              src="assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.webp{% endif %}"
+              alt="{{ person.name }}"
+              class="img-fluid headshot"
+            />
+          </div>
+          <div>
+            <div class="polaroid-text name-text">
+              <span>{{ person.name }}</span>
+            </div>
+            <div class="polaroid-text">
+              <span>{{ person.position }}</span>
+            </div>
+
+            <div class="polaroid-icons d-flex">
+              {% if person.linkedin %}
+              <a href="{{ person.linkedin }}" class="linkedin-icon">
+                <img
+                  src="assets/images/icons/linkedin.svg"
+                  alt="LinkedIn logo"
+                />
+              </a>
+              {% endif %} {% if person.website %}
+              <a href="{{ person.website }}" class="external-site-icon">
+                <img
+                  src="assets/images/icons/external.svg"
+                  alt="External website icon"
+                />
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
         {% endif %} {% endfor %}
       </div>
     </div>

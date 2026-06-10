@@ -1,41 +1,38 @@
 <!-- Footer with NEU logo and nav links -->
 <div class="footer">
   <div class="container">
-    <div class="row pt-4">
-      <div class="col-sm-12 col-md-6 d-flex align-items-center">
+    <div class="row pt-3 pb-3">
+      <div class="col-auto d-flex align-items-center">
+        <img
+          class="footer-ato-logo"
+          src="assets/images/ATo-Logo.svg"
+          alt="ATo Logo"
+        />
         <a href="https://www.northeastern.edu/">
           <img
             class="footer-neu-logo"
-            src="assets/images/neu-banner.png"
+            src="assets/images/neu-logo.png"
             alt="Northeastern University"
           />
         </a>
+        <div class="col-auto d-flex flex-column align-items-start footer-logo-stack">
+          <img
+            src="assets/images/camd-logo.png"
+            alt="CAMD logo"
+            class="logos"
+          />
+          <img
+            src="assets/images/khoury-logo.png"
+            alt="Khoury logo"
+            class="logos"
+          />
+        </div>
       </div>
-      <div class="col-sm-12 col-md-6 d-flex align-items-center nav-container">
-        <ul class="footer-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/people">People</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/404.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/publications">Publications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/press">Press</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="row pb-2">
-      <div class="col d-flex justify-content-center">
-        <a href="/">
-          <h1 class="footer-title">The ATO LAB @ <span>NORTHEASTERN</span></h1>
-        </a>
+      <div class="col d-flex flex-column justify-content-center nav-container">
+        <!-- <h5>ato.neulab@gmail.com</h5>
+        <h5>271 Huntington Ave</h5>
+        <h5>Boston, MA 02115</h5> -->
+        <h5>{% include text-content/about-colleges.md %}</h5>
       </div>
     </div>
   </div>

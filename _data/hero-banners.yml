@@ -1,0 +1,16 @@
+- page_name: "About"
+  image: "about-hero.webp"
+  optional_replacement_name: "ATo Lab"
+  subheading: "A Northeastern University multidisciplinary research lab working the intersections of human-computer interaction, games, and social justice."
+
+- page_name: "People"
+  image: "people-hero.webp"
+
+- page_name: "Projects"
+  image: "projects-hero1.webp"
+
+- page_name: "Publications"
+  image: "publications-hero.webp"
+
+- page_name: "Press"
+  image: "press-hero.webp"

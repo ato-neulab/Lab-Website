@@ -1,57 +1,43 @@
 .footer
-  background-color: $brown
+  background-color: $black-footer
 
   .footer-neu-logo
-    height: 5rem
+    height: 4rem
     transition: all 0.3s ease-in-out
 
     &:hover
       transform: translateY(-4px)
+  
+  .footer-ato-logo
+    height: 4rem
+    margin-left: 1rem
 
   .nav-container
     text-decoration: none
-    text-transform: uppercase
-    font-weight: bold
-    font-family: 'Josefin Sans', sans-serif
     flex-direction: row-reverse
 
-    ul
-      list-style-type: none
-      margin-bottom: 0
-
-      li a
-        text-align: end
-        color: $off-white
-        transition: all 0.3s ease-in-out
-
-        &:hover
-          transform: translateY(-4px)
-          color: $red
-
   @media screen and (max-width: 768px)
-    .nav-container ul
-      padding: 0
-      margin-bottom: 1rem
-      li a
-        text-align: center
-
     .col-sm-12
       justify-content: center
 
       .footer-neu-logo
         margin-bottom: 1rem
+      
+      .footer-ato-logo
+        margin-bottom: 1rem
+
+  .logos
+    height: 1.5rem
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(55deg) brightness(100%) contrast(100%)
+
+  .footer-logo-stack
+    gap: 0.25rem
 
   a
     text-decoration: none
-
-  .footer-title
-    color: $off-white
-    font-size: 1rem
-    font-weight: normal
-    transition: all 0.3s ease-in-out
-
-    span
-      color: $red
-
-    &:hover
-      transform: translateY(-4px)
+  
+  h5
+    color: $white
+    font-size: 0.8rem
+    font-family: 'Cal Sans UI', sans-serif
+    margin: 0
