@@ -18,9 +18,11 @@ permalink: /publications
             <a class="hover-link" href="{{ publication.link }}">
                 {{ publication.authors }} {{ }}<span class="underlined">{{ publication.name }}</span>{{ }} {{ publication.proceedings }}
                 {% if publication.award == "Best Paper Award" %}
-                    <img src="/assets/images/icons/bestpaper.png" alt="Best Paper Award Icon" class="award-icon">
+                    <img src="/assets/images/icons/bestpaper.png" alt="Best Paper Award Icon" 
+                    title="Best Paper Award">
                 {% elsif publication.award == "Honourable Mention Award" %}
-                    <img src="/assets/images/icons/honorable.png" alt="Honourable Mention Award Icon"class="award-icon">
+                    <img src="/assets/images/icons/honorable.png" alt="Honourable Mention Award Icon" 
+                    title="Honourable Mention Award">
                 {% endif %}
             </a>
             {% else %}
