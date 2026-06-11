@@ -16,7 +16,7 @@ permalink: /publications
             <!-- If the publication has a provided link, the YML file should break down the title into components for display -->
             {% if publication.link and publication.name %}
             <a class="hover-link" href="{{ publication.link }}">
-                {{ publication.authors }} {{ }}<span class="underlined">{{ publication.name }}</span>{{ }} {{ publication.proceedings }}
+                {{ publication.authors }} <span class="underlined">{{ publication.name }}</span> {{ publication.proceedings }}
                 {% if publication.award == "Best Paper Award" %}
                     <img src="/assets/images/icons/bestpaper.png" alt="Best Paper Award Icon" 
                     title="Best Paper Award">
