@@ -72,9 +72,9 @@ Assumes you know how to use GitHub well enough to be able to change files, make 
 
 #### Creating new headers, footers, hero banners, and buttons
 
-1. Navgiate to `_inculdes` and add a new html file.
-2. Naming convension should be `[type_of_item]-[label].html`, such as `header-about.html`
-3. For headers, footers, and hero banners: navigate to `/_layouts/wrapper.html` to adjust which pages are effected by what
+1. Navigate to `_inculdes` and add a new html file.
+2. Naming convention should be `[type_of_item]-[label].html`, such as `header-about.html`
+3. For headers, footers, and hero banners: navigate to `/_layouts/wrapper.html` to adjust which pages are affected by what
 
 #### How to edit, add, or remove someone on the People page
 
@@ -113,4 +113,5 @@ All publications are displayed in the order of the yml, in chronological order o
 
 1. Navigate to `/_includes/text-content/`
 2. Edit file of your choosing
+   1. Naming convention should be `[page-name]-[related-section-name].md`, like `about-mission.md` or `footer-colleges.md`
    1. Do not remove any tags (ie: \<p\>,\<h1\>), just edit the text in between
