@@ -14,7 +14,7 @@ A static website made with Jekyll for the ATo Lab, a multidisciplinary research 
 
 **Midjourney** - Image Generation, Mockups
 
-[**Realtime Colors**](https://realtimecolors.com/) - Color Palette
+[**Coolors**](https://coolors.co) - Color Palette
 
 ### Process:
 
@@ -64,7 +64,17 @@ Assumes you know how to use GitHub well enough to be able to change files, make 
    1. Set `layout` to `wrapper`.
       1. Ensures all the prerequisites for the site get loaded in the page you're making. It's almost always recommended you do this, unless you really know what you're doing.
    2. Set `title` to whatever you want your title to be
-3. Write whatever content you want
+3. Create a nice header banner
+   1. Under `/_data/hero-banners.yml`, set the page_name to be the `title` of the page as well as an image
+   2. The image should be placed under `/assets/images/hero-banners-2026` and named accordingly
+   3. If you want to use another custom header (like in the `About` page), go to the body section of `/_layouts/wrapper.html` and adjust accordingly. The yml should also be adjusted to support any changes you want.
+4. Write whatever content you want
+
+#### Creating new headers, footers, hero banners, and buttons
+
+1. Navgiate to `_inculdes` and add a new html file.
+2. Naming convension should be `[type_of_item]-[label].html`, such as `header-about.html`
+3. For headers, footers, and hero banners: navigate to `/_layouts/wrapper.html` to adjust which pages are effected by what
 
 #### How to edit, add, or remove someone on the People page
 
@@ -74,6 +84,30 @@ Assumes you know how to use GitHub well enough to be able to change files, make 
       1. Crop the image to 1:1 aspect ratio (important for maintaining format of polaroids)
       2. Add image file to `/assets/images/headshots/`
       3. In `people.yml`, change headshot field to filename of image (including the suffix)
+
+#### How to edit, add, or remove a publication on the Publication page
+
+1. Navigate to `/_data/publications.yml`
+2. To add a publication
+   1. Add the title of the publication in full
+   2. If possible, add the link to the publication tied to the title
+   3. If possible, break the title into individual components: authors, name, proceedings, and award
+   4. Navigate to `/_data/last-updated-dates.yml` to adjust the last updated date under publications
+3. To edit or delete
+   1. Locate the publication through title or other means and adjust or remove features
+
+All publications are displayed in the order of the yml, in chronological order of most recent
+
+#### How to edit, add, or remove a press on the Press page
+
+1. Navigate to `/_data/press.yml`
+2. To add a press page
+   1. Add the title of the press and include the date published, link, and supporting image as subheaders
+   2. To change or add image:
+      1. Crop the image to 3:2 aspect ratio (important for maintaining format)
+      2. Add image file to `/assets/images/pages/press/`
+      3. In `press.yml`, change headshot field to filename of image (including the suffix)
+   3. Navigate to `/_data/last-updated-dates.yml` to adjust the last updated date under publications
 
 #### How to edit the text sections
 
