@@ -1,12 +1,22 @@
-.header-about
-  scroll-padding-top: 100px
-  position: absolute
+.header-serg
+  position: relative
   top: 0
   left: 0
   right: 0
   z-index: 1000
-  background-color: rgba(0, 0, 0, 0.0)
+  background-color: $black
   font-family: 'Cal Sans Text', sans-serif
+
+  .logo-container
+    position: relative
+    width: 4rem
+    height: 4rem
+    margin-left: 1rem
+
+    img
+      position: absolute
+      width: 100%
+      height: 100%
 
   .navbar-toggler-icon
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(83, 145, 126, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
@@ -21,7 +31,7 @@
 
   @media screen and (max-width: 991.98px)
     .navbar-collapse.show
-      background-color: $white
+      background-color: $black
       padding: 1rem
       border-radius: 0 0 1rem 1rem
 
@@ -46,7 +56,7 @@
 
     &:hover
       transform: translateY(-4px)
-      color: $black
+      color: $white
 
   // Ensure interactive elements sit above the hero image
   .nav-link,
@@ -55,6 +65,51 @@
   .navbar-toggler-icon
     position: relative
     z-index: 1100
+
+  .serg-btn
+    display: inline-flex
+    align-items: center
+    background-color: $lime
+    padding: 0.3rem 0.3rem 0.3rem 0.8rem
+    border-radius: 8px
+    border: 0px
+    margin-left: auto
+    margin-right: 1rem
+
+    .dropdown-icon
+      display: inline-block
+      transition: transform 0.2s ease-in-out
+
+    &[aria-expanded="true"] .dropdown-icon
+      transform: rotate(180deg)
+
+  .serg-dropdown
+    position: relative
+    display: flex
+    align-items: center
+    margin-left: auto
+    margin-right: 1rem
+
+    @media screen and (max-width: 991.98px)
+      margin-left: 0
+      margin-top: 0.8rem
+
+    .serg-btn
+      margin-left: 0
+      margin-right: 0
+    
+    .drowndown-text
+      z-index: 1100
+
+    .dropdown-menu
+      background-color: $lime
+      border: 0px
+      right: 0
+      top: calc(80%)
+      min-width: 100%
+
+    .dropdown-item
+      background-color: $lime
 
   .btn-cta-alt
     &:hover

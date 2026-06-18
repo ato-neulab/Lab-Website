@@ -13,22 +13,20 @@
       crossorigin="anonymous"
     />
     <!-- Link Custom Sass/CSS stylesheet -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
     <!-- Link Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/temp-favicon.svg" />
   </head>
   <body>
     <!-- Include header -->
-    {% if page.title == "About" %}
-      {% include header-about.html %}
+    {% if page.header %}
+      {% include {{ page.header }}.html %}
     {% else %}
       {% include header-general.html %}
     {% endif %}
     <!-- Include standard hero banner -->
-    {% if page.title == "About" %}
-      {% include hero-about.html %}
-    {% else %}
-      {% include hero-standard.html %}
+    {% if page.hero %}
+      {% include {{ page.hero }}.html %}
     {% endif %}
     <!-- Include page content -->
     {{ content }}

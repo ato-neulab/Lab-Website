@@ -1,6 +1,9 @@
 ---
 layout: "wrapper"
 title: "People"
+header: header-general
+hero: hero-standard
+permalink: /people
 ---
 
 <div class="people">
@@ -12,7 +15,7 @@ title: "People"
       <!-- <div class="polaroid d-flex flex-row justify-content-center">
         <div class="d-flex justify-content-flex-start">
           <img
-            src="assets/images/headshots/ato.webp"
+            src="{{ '/assets/images/headshots/ato.webp' | relative_url }}"
             alt="Alexandra To"
             class="img-fluid headshot"
           />
@@ -27,10 +30,10 @@ title: "People"
           <div class="polaroid-icons d-flex">
             Links to person's LinkedIn profile and personal website. The icons are styled as clickable links.
             <a href="https://www.linkedin.com/in/alexandra-to-02b42344/" class="linkedin-icon">
-              <img src="assets/images/icons/linkedin.svg" alt="LinkedIn logo" />
+              <img src="{{ '/assets/images/icons/linkedin.svg' | relative_url }}" alt="LinkedIn logo" />
             </a>
             <a href="https://www.alexandrato.com/" class="external-site-icon">
-              <img src="assets/images/icons/external.svg" alt="External website icon" />
+              <img src="{{ '/assets/images/icons/external.svg' | relative_url }}" alt="External website icon" />
             </a>
           </div>
         </div>
@@ -48,7 +51,7 @@ title: "People"
         >
           <div class="d-flex justify-content-flex-start">
             <img
-              src="assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.webp{% endif %}"
+              src="{{ '/assets/images/headshots/' | relative_url }}{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.webp{% endif %}"
               alt="{{ person.name }}"
               class="img-fluid headshot"
             />
@@ -65,14 +68,14 @@ title: "People"
               {% if person.linkedin %}
               <a href="{{ person.linkedin }}" class="linkedin-icon">
                 <img
-                  src="assets/images/icons/linkedin.svg"
+                  src="{{ '/assets/images/icons/linkedin.svg' | relative_url }}"
                   alt="LinkedIn logo"
                 />
               </a>
               {% endif %} {% if person.website %}
               <a href="{{ person.website }}" class="external-site-icon">
                 <img
-                  src="assets/images/icons/external.svg"
+                  src="{{ '/assets/images/icons/external.svg' | relative_url }}"
                   alt="External website icon"
                 />
               </a>
@@ -104,7 +107,7 @@ title: "People"
         >
           <div class="d-flex justify-content-flex-start">
             <img
-              src="assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.webp{% endif %}"
+              src="{{ '/assets/images/headshots/' | relative_url }}{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.webp{% endif %}"
               alt="{{ person.name }}"
               class="img-fluid headshot"
             />
@@ -121,14 +124,14 @@ title: "People"
               {% if person.linkedin %}
               <a href="{{ person.linkedin }}" class="linkedin-icon">
                 <img
-                  src="assets/images/icons/linkedin.svg"
+                  src="{{ '/assets/images/icons/linkedin.svg' | relative_url }}"
                   alt="LinkedIn logo"
                 />
               </a>
               {% endif %} {% if person.website %}
               <a href="{{ person.website }}" class="external-site-icon">
                 <img
-                  src="assets/images/icons/external.svg"
+                  src="{{ '/assets/images/icons/external.svg' | relative_url }}"
                   alt="External website icon"
                 />
               </a>

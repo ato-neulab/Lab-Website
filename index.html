@@ -1,5 +1,7 @@
 ---
 title: "About"
+header: header-about
+hero: hero-about
 layout: "wrapper"
 ---
 
@@ -28,7 +30,7 @@ layout: "wrapper"
         <!-- The rest of the HTML structure inside each 'ra-col' div is similar. -->
         <div class="ra-card d-flex flex-column align-items-center">
           <img
-            src="/assets/images/icons/keyboard.svg"
+            src="{{ '/assets/images/icons/keyboard.svg' | relative_url }}"
             alt="Keyboard icon"
             class="ra-card-icon"
           />
@@ -43,7 +45,7 @@ layout: "wrapper"
       <div class="ra-col col-sm-12 col-md-4">
         <div class="ra-card d-flex flex-column align-items-center">
           <img
-            src="/assets/images/icons/controller.svg"
+            src="{{ '/assets/images/icons/controller.svg' | relative_url }}"
             alt="Video game controller icon"
             class="ra-card-icon"
           />
@@ -54,7 +56,7 @@ layout: "wrapper"
       <div class="ra-col col-sm-12 col-md-4">
         <div class="ra-card d-flex flex-column align-items-center">
           <img
-            src="/assets/images/icons/diversity.svg"
+            src="{{ '/assets/images/icons/diversity.svg' | relative_url }}"
             alt="Together icon"
             class="ra-card-icon"
           />
@@ -73,7 +75,7 @@ layout: "wrapper"
   <div class="container py-5">
     <div class="row align-items-center">
       <div class="col-sm-12 col-md-5 d-flex justify-content-center">
-        <img src="/assets/images/pages/about/get-involved.jpg" alt="Get Involved Picture" class="get-involved-image img-fluid">
+        <img src="{{ '/assets/images/pages/about/get-involved.jpg' | relative_url }}" alt="Get Involved Picture" class="get-involved-image img-fluid">
       </div>
       <div class="col-sm-12 col-md-7">
         <h2>Get Involved</h2>
@@ -84,7 +86,7 @@ layout: "wrapper"
         <!-- This is a button that links to an email address. -->
         <button class="btn btn-cta" type="button">
           <a href="mailto:ato.neulab@gmail.com">
-            <img src="/assets/images/icons/email.svg" alt="Mail icon"/>
+            <img src="{{ '/assets/images/icons/email.svg' | relative_url }}" alt="Mail icon"/>
             Email Us!
           </a>
         </button>
@@ -94,7 +96,7 @@ layout: "wrapper"
         <img
           id="gi-img"
           class="img-fluid my-2"
-          src="/assets/images/pages/about/get-involved.jpg"
+          src="{{ '/assets/images/pages/about/get-involved.jpg' | relative_url }}"
           alt="Cartoon image of woman typing at laptop"
         />
       </div> -->

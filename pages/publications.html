@@ -2,6 +2,7 @@
 layout: "wrapper"
 title: Publications
 permalink: /publications
+hero: hero-standard
 ---
 
 <div class="publications">
@@ -18,10 +19,10 @@ permalink: /publications
             <a class="hover-link" href="{{ publication.link }}">
                 {{ publication.authors }} <span class="underlined">{{ publication.name }}</span> {{ publication.proceedings }}
                 {% if publication.award == "Best Paper Award" %}
-                    <img src="/assets/images/icons/bestpaper.png" alt="Best Paper Award Icon" 
+                    <img src="{{ '/assets/images/icons/bestpaper.png' | relative_url }}" alt="Best Paper Award Icon" 
                     title="Best Paper Award">
                 {% elsif publication.award == "Honourable Mention Award" %}
-                    <img src="/assets/images/icons/honorable.png" alt="Honourable Mention Award Icon" 
+                    <img src="{{ '/assets/images/icons/honorable.png' | relative_url }}" alt="Honourable Mention Award Icon" 
                     title="Honourable Mention Award">
                 {% endif %}
             </a>

@@ -4,7 +4,7 @@
             
                 <div class="hero-banner">
                     <img
-                        src="assets/images/hero-banners-2026/{{ banner.image }}"
+                        src="{{ '/assets/images/hero-banners-2026/' | relative_url }}{{ banner.image }}"
                         alt="{{ banner.page_name }}"
                         class="img-fluid headshot">
                     <h1 class="hero-heading">
