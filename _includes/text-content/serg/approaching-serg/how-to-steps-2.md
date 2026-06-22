@@ -1,0 +1,1 @@
+<p>If this feels daunting, we encourage dipping your toes in just a single aspect of each section to get a feel for what this is about (e.g., reading “The 4 I’s of Oppression” under Essential Concepts, “Acknowledges Race” under Spectrums for Engaging Race in Games, etc.)</p>

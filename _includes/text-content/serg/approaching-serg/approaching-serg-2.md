@@ -1,0 +1,1 @@
+<p>It is important to note that it is nearly impossible (and not necessarily advised) for a single game to be “high'' or “good'' on all spectrums. Not all spectrums need to be applicable in a game to fulfill its purpose. Furthermore, it is important to recognize that a “low'' placement on all spectrums may be concerning or surprising and motivate change.</p>

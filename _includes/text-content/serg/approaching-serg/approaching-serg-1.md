@@ -1,0 +1,1 @@
+<p>We encourage game designers to place their games across the 8 spectrums. This can happen in a single process in the design pipeline or recurrently throughout the design process. Placements across the spectrums are not necessarily positive or negative, but instead should be used to invite conversation about a game’s direction and design.</p>

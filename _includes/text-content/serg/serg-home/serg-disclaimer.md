@@ -1,0 +1,1 @@
+<p>It is important to note that this framework is NOT intended to provide the “correct solution'' to all race-related inquiries or to define what “good'' or “bad'' representation is. Instead we hope it provides a more nuanced language so game designers can make clear and intentional choices around race within their games.</p>
