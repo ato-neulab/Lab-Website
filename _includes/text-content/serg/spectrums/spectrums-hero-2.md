@@ -1,0 +1,1 @@
+<p>While we provide descriptions to help place games along each spectrum, these are entirely flexible, and game designers may arrive at different conclusions. There are often no right or wrong answers. Rather, the framework is meant to help tease apart the nuance of racial representation and spark conversation around game design amongst cross-functional teams.</p>

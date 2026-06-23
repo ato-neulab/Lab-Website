@@ -1,0 +1,1 @@
+<p>The concepts informed the design and development of the spectrums. It is necessary to have an understanding of these concepts to thoroughly understand each spectrum and how they interact with one another. The following section will implement these principles into eight spectrums.</p>

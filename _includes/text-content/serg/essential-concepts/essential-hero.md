@@ -1,0 +1,3 @@
+<p>We define race as the “notion of a distinct biological type of human being, usually based on skin color or other physical characteristics” (Delgado & Stefancic, 2020). Within the context of this framework, race is largely rooted in U.S. sociopolitics, but race is distinct from but has many interesting parallels to other concepts globally such as ethnicity, nationality, caste, tribe, culture, and more that can be noted when engaging with this framework.</p>
+
+<p>In order to use this framework effectively, it is necessary to understand some base line concepts regarding race and ethnic studies. We encourage designers to do additional reading, but we will provide the necessary baseline of knowledge here.</p>

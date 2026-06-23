@@ -5,8 +5,30 @@ header: header-serg
 permalink: /design-activities
 ---
 
-<div class="serg-intro mt-5">
-    <section class="serg-framework-intro container w-75 py-4">
-        <h1 class="text-allign middle">Design Activities</h1>
-    </section>
-</div>
+
+<section class="serg-design-hero container-fluid w-75 pt-5">
+    <div class="d-flex row align-items-center">
+        <div class="col">
+            <h1 class="text-center">Design Activities</h1>
+
+            <div class="mt-2 mb-4 text-center design-hero-text pb-1">
+                {% include text-content/serg/design-activities/design-hero-intro.md %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="brainstorm-activities container-fluid py-2">
+    <div class="w-75 row align-items-center mx-auto">
+        <div class="row mt-2 mb-3 text-left align-items-center justify-content-center">
+            <h2><span class="activities-titles">Brainstorm Activities</span></h2>
+        </div>
+        <div class="row mb-2 text-left align-items-center justify-content-center instruction-text">
+            {% include text-content/serg/design-activities/brainstorm-instruction.md %}
+        </div>
+
+        <div class="row mt-2 mb-2 text-left align-items-center justify-content-center activity-text">
+            {% include text-content/serg/design-activities/brainstorm-general.md %}
+        </div>
+    </div>
+</section>

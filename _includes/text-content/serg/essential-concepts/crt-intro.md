@@ -1,0 +1,1 @@
+<p>Tenets of critical race theory allow us to identify how racialized social structures impact game design and manifest in the game design process, the games industry, and games themselves. Specifically we highlight:</p>

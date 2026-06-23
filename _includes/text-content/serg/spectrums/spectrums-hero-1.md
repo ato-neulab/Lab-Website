@@ -1,0 +1,1 @@
+<p>As an introductory activity, we encourage game designers to place their games across the eight spectrums, which may help anywhere in the game design process from pre-production, to playtesting and iteration, to quality assurance testing and polishing, etc.</p>
