@@ -12,16 +12,21 @@ section.serg-design-hero
     margin-right: auto
     font-size: 1.1rem
 
-section.brainstorm-activities
+section.brainstorm-activities, section.iteration-activities, section.guiding-activities
+    background-color: $white
+
     .activities-titles
         font-family: 'Cal Sans UI Bold'
-        padding: 1.2rem
         background-color: $serg-blue
         border-radius: 8px
+        line-height: 2.3rem
+        padding: 0.55rem
+        box-decoration-break: clone
+        -webkit-box-decoration-break: clone
     
     .instruction-text
         font-family: 'Space Grotesk'
-        width: 40rem
+        width: 50rem
         font-size: 1.1rem
     
     .activity-text
@@ -29,3 +34,30 @@ section.brainstorm-activities
     
     .activity-text span
         font-family: 'Space Grotesk Bold'
+    
+    .side-text
+        font-family: 'Space Grotesk'
+        font-size: 0.9rem
+
+section.guiding-activities
+    .instruction-text
+        width: 100rem
+
+section.redirection-design
+  background-color: $white
+  
+  h2
+    font-family: 'Cal Sans UI Bold'
+    font-size: 1.5rem
+  
+  .spectrums-btn
+    background-color: $serg-green
+    color: $black
+    font-size: 1.2rem
+    border: none
+  
+  .goal-btn
+    background-color: $serg-purple
+    color: $black
+    font-size: 1.2rem
+    border: none

@@ -1,0 +1,1 @@
+<p>This Guiding Design Questions Worksheet is meant to help designers think about engaging race with attention to detail surrounding essential concepts addressing the SERG framework. Questions are separated into sections on how the designer is approaching SERG based on the stage of development of a game.</p>
