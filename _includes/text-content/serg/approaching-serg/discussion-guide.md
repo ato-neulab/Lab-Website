@@ -1,0 +1,6 @@
+<p>
+Chances are, if you’re making a game, you’re not doing it alone. Conversations around race/ethnicity can be difficult to navigate as the people involved might have different life experiences and backgrounds. We advocate for the safety of game workers and do not want them to engage in these conversations if it will put them in an unsafe or uncomfortable working environment especially in spaces with limited BIPOC workers. However, one of the goals of this framework is to help facilitate these workplace discussions. Below we will briefly discuss important guidance for navigating these discussions with some examples of how you might use the SERG framework in those discussions at the end of this section.<br><br>
+
+Many people are uncomfortable with discussing race at work; some people will be uncomfortable because they don’t want to seem racist or bigoted while others may be afraid of being labeled as complainers, “making a big deal out of nothing” or being asked to take on disproportionate labor for “representing” particular cultures/races. One framework/toolkit that may help with having these conversations is the BRAVE (Build, Respect, Acknowledge, Validate and Emphasize) framework created by Dr. Enrica N. Rugg and Dr. Derek Avery, which was created to help frame discussions of race and racial discrimination.
+
+</p>

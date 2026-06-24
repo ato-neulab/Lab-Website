@@ -1,0 +1,5 @@
+<p>
+- What are the main racial or cultural takeaways you want the audience who may or may not have prior knowledge of this culture gleaned from playing this game?<br>
+- If designing a character, consider how you want this character to be received by an audience. Is this character meant to be presented as one of a collective who does not stand out as a function of their culture, or one with its own distinct attributes as a function of race and culture?<br>
+- If your game does not currently place along the spectrums in the intended way, consider games that align closer to what you wish to accomplish. How does this game approach representation, and how does this representation differ from your own approach? This exercise is not to be confused with copying another design. Rather, its purpose is to consider approaches that landed in a place you wish your design to be, consider how or why what they did worked, and consider how you might use similar approaches to achieve your design and placement goals.
+</p>
