@@ -1,0 +1,6 @@
+<p>
+Let’s discuss possible motivations of game designers and stakeholders for thoughtfully considering race in their game.<br><br>
+- <span>Audience Reception</span>: modern audiences are extremely sensitive to pandering and desire authentic and purposeful design. Audiences have sharp discernment; from those who might critique what they perceive to be “DEI-driven design” (i.e., including people of color unnecessarily because one “must”) to those who might critique what they perceive to be a cash grab (i.e., including people of color shallowly to trick BIPOC audiences into spending their money on poor representation). Authentic and purposeful design requires transparent, open, and purposeful communication within the design team.<br><br>
+- <span>Responsible Design</span>: while BIPOC have always been a large part of the gaming market and have always worked in game design, for generations they have been under- and mis-represented. Engaging race in game design requires understanding not just the impact of your game on its own, but its place in the larger pantheon of games and the cultural/social context in which the game exists.<br><br>
+SEE sections 3 and 4 for the educational and practical components of the framework. SEE section 5 for further guidance on setting goals for how your game engages with race on your own or with collaborators.
+<p>
