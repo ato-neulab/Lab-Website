@@ -1,0 +1,41 @@
+.header
+  background-color: rgba(0, 0, 0, 0.0)
+  font-family: 'Cal Sans Text', sans-serif
+
+  .navbar-toggler-icon
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(83, 145, 126, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+    border-color: $green
+
+  .collapse .nav-link
+    margin-left: 0.5em
+    margin-right: 1em
+
+  .collapse.show .nav-link
+    margin: 0 0
+
+  .nav-link:hover
+    color: $white
+
+  h1
+    color: $white
+    font-family: 'Cal Sans Text'
+    font-weight: bold
+    font-size: 3rem
+    @media screen and (max-width: 768px)
+      font-size: 2.5rem
+
+  .nav-link
+    color: $green
+    text-decoration: none
+    transition: all 0.3s ease-in-out
+
+    &:hover
+      transform: translateY(-4px)
+      color: $black
+
+  .btn-cta-alt
+    &:hover
+      background-color: $brown
+
+      a
+        color: $off-white

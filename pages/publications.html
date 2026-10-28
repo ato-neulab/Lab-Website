@@ -17,17 +17,26 @@ hero: hero-standard
             <!-- If the publication has a provided link, the YML file should break down the title into components for display -->
             {% if publication.link and publication.name %}
             <a class="hover-link" href="{{ publication.link }}">
-                {{ publication.authors }} <span class="underlined">{{ publication.name }}</span> {{ publication.proceedings }}
+                {{ publication.authors }} <span class="nice-title underlined">{{ publication.name }}</span> {{ publication.proceedings }}
                 {% if publication.award == "Best Paper Award" %}
-                    <img src="{{ '/assets/images/icons/bestpaper.png' | relative_url }}" alt="Best Paper Award Icon" 
+                    <img src="{{ '/assets/images/icons/bestpaper.png' | relative_url }}" alt="Best Paper Award Icon"
                     title="Best Paper Award">
                 {% elsif publication.award == "Honourable Mention Award" %}
-                    <img src="{{ '/assets/images/icons/honorable.png' | relative_url }}" alt="Honourable Mention Award Icon" 
+                    <img src="{{ '/assets/images/icons/honorable.png' | relative_url }}" alt="Honourable Mention Award Icon"
                     title="Honourable Mention Award">
                 {% endif %}
             </a>
             {% else %}
-            <a>{{ publication.title }}</a>
+            <a class="deactivated-link">
+                {{"[IN PRESS] "}}{{ publication.authors }} <span class="nice-title">{{ publication.name }}</span> {{ publication.proceedings }}
+                {% if publication.award == "Best Paper Award" %}
+                    <img src="{{ '/assets/images/icons/bestpaper.png' | relative_url }}" alt="Best Paper Award Icon"
+                    title="Best Paper Award">
+                {% elsif publication.award == "Honourable Mention Award" %}
+                    <img src="{{ '/assets/images/icons/honorable.png' | relative_url }}" alt="Honourable Mention Award Icon"
+                    title="Honourable Mention Award">
+                {% endif %}
+            </a>
             {% endif %}
         </div>
         {% endfor %}
