@@ -1,0 +1,140 @@
+---
+layout: "wrapper"
+title: "Projects"
+header: header-general
+hero: hero-standard
+permalink: /projects
+---
+<div>
+<section class="projects">
+    <nav class="project-section-nav navbar navbar-expand-lg" aria-label="Project sections">
+        <div class="container">
+            <span class="navbar-brand">Projects</span>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#projectSectionNav"
+                aria-controls="projectSectionNav"
+                aria-expanded="false"
+                aria-label="Toggle project sections"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="projectSectionNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#research-projects">Research Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#transformational-projects">Transformational Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container pt-4">
+
+        <!-- SECTIONED OFF IN ORDER: RESEARCH, TRANSFORMATIONAL GAMES -->
+        <section class="research-projects" id="research-projects">
+            <h1>Research Projects</h1>
+            {% for project in site.data.projects %}
+            {% if project.section_part == "research" %}
+                <article class="project-item mb-4">
+                {% if project.link %}
+                <a class="project-link" href="{{ project.link | relative_url }}">
+                {% endif %}
+                    <div class="row align-items-center">
+                            <div class="{% if project.image and project.image != empty %}col-md-8{% else %}col-12{% endif %}">
+                                <h3 class="title-header">{{ project.title }}</h3>
+                                <p class="project-meta">
+                                    <em>
+                                        {{ project.team_1 }}<br>
+                                        {{ project.team_2 }}
+                                    </em>
+                                </p>
+                                <p class="project-description">{{ project.short-description }}</p>
+                            </div>
+                            {% if project.image and project.image != empty %}
+                            <div class="col-md-4">
+                                <img
+                                    src="{{ '/assets/images/page-imgs/projects-page/' | append: project.image | relative_url }}"
+                                    alt="{{ project.title }}"
+                                    class="img-fluid project-image"
+                                />
+                            </div>
+                            {% endif %}
+                        </div>
+                    {% if project.link %}
+                    </a>
+                    {% endif %}
+                    {% if project.long-description %}
+                    <details class="project-details">
+                        <summary>Read full description</summary>
+                        <div class="long-description">{{ project.long-description }}</div>
+                    </details>
+                    {% endif %}
+                    
+                    {% if project.papers %}
+                    <details class="project-details">
+                        <summary>Read papers</summary>
+                        <ul class="papers-list">
+                            {% for paper in project.papers %}
+                            <li>{{ paper }}</li>
+                            {% endfor %}
+                        </ul>
+                    </details>
+                    {% endif %}
+                </article>
+                {% endif %}
+            {% endfor %}
+        </section>
+
+        <!-- SECTIONED OFF IN ORDER: RESEARCH, TRANSFORMATIONAL GAMES -->
+        <section class="transformational-projects" id="transformational-projects">
+            <h1>Transformational Projects</h1>
+            {% for project in site.data.projects %}
+            {% if project.section_part == "transformational" %}
+            <article class="project-item mb-4">
+                {% if project.link %}
+                <a class="project-link" href="{{ project.link | relative_url }}">
+                {% endif %}
+                    <div class="row align-items-center">
+                        <div class="{% if project.image and project.image != empty %}col-md-8{% else %}col-12{% endif %}">
+                            <h3 class="title-header">{{ project.title }}</h3>
+                            <p class="project-meta">
+                                <em>
+                                    {{ project.team_1 }}<br>
+                                    {{ project.team_2 }}
+                                </em>
+                            </p>
+                            <p class="project-description">{{ project.short-description }}</p>
+                        </div>
+                        {% if project.image and project.image != empty %}
+                        <div class="col-md-4">
+                            <img
+                                src="{{ '/assets/images/page-imgs/projects-page/' | append: project.image | relative_url }}"
+                                alt="{{ project.title }}"
+                                class="img-fluid project-image"
+                            />
+                        </div>
+                        {% endif %}
+                    </div>
+                {% if project.link %}
+                </a>
+                {% endif %}
+                {% if project.long-description %}
+                <details class="project-details">
+                    <summary>Read full description</summary>
+                    <div class="long-description">{{ project.long-description }}</div>
+                </details>
+                {% endif %}
+            </article>
+            {% endif %}
+            {% endfor %}
+        </section>
+
+    </div>
+    <p class="text-center pt-5">Last Updated: {{ site.data.last-updated-dates.projects }}</p>
+</section>
+</div>

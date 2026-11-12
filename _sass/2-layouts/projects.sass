@@ -1,0 +1,123 @@
+.projects
+    .project-section-nav
+        background-color: $white
+        border-bottom: 3px solid $green
+        font-family: 'Cal Sans Text', sans-serif
+
+        .container
+            display: flex
+            align-items: center
+            max-width: 70rem
+
+        .navbar-brand
+            color: $black
+            font-family: 'Cal Sans UI Bold'
+            font-weight: bold
+
+        .navbar-toggler
+            border-color: $green
+
+            &:focus
+                border-color: $green
+                box-shadow: none
+
+        .navbar-toggler-icon
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(83, 145, 126, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+
+        .nav-link
+            color: $green
+            margin-left: 1rem
+            margin-right: 1rem
+            text-decoration: none
+
+            &:hover
+                color: $black
+
+        @media screen and (max-width: 991.98px)
+            .navbar-collapse.show
+                background-color: $white
+                padding: 0.5rem 1rem
+                border-radius: 0 0 1rem 1rem
+
+            .nav-link
+                margin: 0
+
+    .container
+        max-width: 70rem
+
+    .project-item
+        background-color: $white
+        padding: 1.5rem
+
+        &:hover
+            .project-link .title-header
+                color: $green
+
+            .project-image
+                filter: brightness(90%)
+    
+    h1
+        font-family: 'Cal Sans UI'
+        padding-left: 2%
+    
+    section.research-projects, section.transformational-projects
+        background-color: $white
+
+    .project-link
+        color: $black
+        text-decoration: none
+
+    .title-header
+        margin-bottom: 0.5rem
+        font-family: 'Cal Sans UI Bold'
+
+    .project-meta
+        margin-bottom: 1rem
+        font-family: 'Space Grotesk'
+        font-size: 0.95rem
+
+    .project-description
+        margin-bottom: 0
+        font-family: 'Space Grotesk'
+        font-size: 1.1rem
+
+    .project-image
+        width: 100%
+        transition: filter 0.3s ease
+
+    .project-details
+        margin-top: 1.25rem
+        font-family: 'Space Grotesk'
+
+        summary
+            display: inline-block
+            padding: 0.5rem 1rem
+            background-color: $green
+            color: $white
+            cursor: pointer
+            font-weight: bold
+            list-style: none
+
+            &::-webkit-details-marker
+                display: none
+
+            &::after
+                content: '+'
+                margin-left: 0.75rem
+
+        &[open] summary::after
+            content: '-'
+
+        .long-description
+            margin: 1rem 0 0
+            white-space: pre-line
+
+        .papers-list
+            margin: 1rem 0 0
+            padding-left: 1.25rem
+
+            li
+                margin: 0
+
+    a
+        color: $green

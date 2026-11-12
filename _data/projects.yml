@@ -1,0 +1,77 @@
+- section_part: "research"
+  title: Queer TTRPGs
+  team_1: "Lead Researcher: Jailyn Zabala"
+  team_2: "Research Team: Josie Zvelebilova, Tris Wong, Alexandra To"
+  short-description: "Studying and designing tabletop RPGs by, for, and about queer players."
+  long-description: "We are interested in the ways that tabletop roleplaying games provide a space for queer identity exploration and experimentation. While TTRPGs broadly provide spaces to imagine and play, we have documented  an emerging genre of TTRPGs that use specific design mechanisms and aesthetics (Zabala et al., 2024 content analysis) to empower queer play (Zabala et al., 2025 interviews with queer players)."
+  papers:
+    - 'Zabala, J., Zvelebilova, J., & To, A. (2025, June). " I felt like I was them. I just didn''t know it.": Exploring Queer Identity through TTRPG Play. In Conference Proceedings of DiGRA 2025: Games at the Crossroads.'
+    - "<strong>[FDG Best Paper Award]</strong> Zabala, J., Zvelebilova, J., & To, A. (2024, May). Queer TTRPGs' Visibility, Safety, and Allegory as Resistance. In Proceedings of the 19th International Conference on the Foundations of Digital Games (pp. 1-10)."
+    - "Zabala, J., Zvelebilova, J., & To, A. (2023, June). Safety and identity exploration: How queer TTRPGs provide structure for players. In Abstract Proceedings of DiGRA 2023 Conference: Limits and Margins of Games."
+
+- section_part: "research"
+  title: Designing for BIPOC Flourishing
+  team_1: "Lead Researchers: Alexandra To and <a href='https://angeladrsmith.com/'>Angela D.R. Smith</a>"
+  team_2: "Research Team and Collaborators: Dilruba Showkat, Adinawa Aadjagbodjou, Christina Harrington"
+  short-description: "A design framework for centering BIPOC joy and flourishing."
+  long-description:
+    "HCI’s historic focus on problem-solving provides powerful tools for addressing marginalization and racial oppression in technology. However, a sole focus on problemetizing race across our industry misses opportunities for designing technologies that center the joy and flourishing of communities of color. Building on pluriversal design and assets-based design amongst other frameworks for design justice and racial justice, we present six design tenets for BIPOC flourishing:
+    \n\n
+    - Seek self-actualization over problem-solving
+    \n
+    - Center the desire to flourish
+    \n
+    - Collaborate and distribute power
+    \n
+    - Refuse damage-centered reductionism
+    \n
+    - Bring community humanity into the process
+    \n
+    - Evaluate for self-sustainability"
+  papers:
+    - "<strong>[DIS Best Paper Award]</strong> To, A., Smith, A. D., Showkat, D., Adjagbodjou, A., & Harrington, C. (2023, July). Flourishing in the everyday: Moving beyond damage-centered design in HCI for BIPOC communities. In Proceedings of the 2023 ACM Designing Interactive Systems Conference (pp. 917-933)."
+
+- section_part: "research"
+  title: BIPOC Games
+  team_1: "Lead Researcher: Alexandra To"
+  team_2: "Research Team: Bethany Miatta Turay, Dylan Dinio, Natalie Chen, Gianna Williams, Tris Wong, Jailyn Zabala"
+  short-description: "NSF CAREER research on engaging race in game design."
+  long-description:
+    "The games industry has identified an urgent and overdue need for racial literacy - while game players represent a diverse swath of our society, the games the industry produces and the game designers who make them often do not. Recent attempts to increase the racial diversity of games have largely addressed inclusion from a visual lens (i.e., including game characters that look like people of color) or end up reproducing the racial oppression people of color encounter in our real world environment; they fall short in terms of true representation (i.e., attending to the sociocultural aspects of racial diversity). Traditional game design processes focus on the mechanics of the game (e.g., the rules), the dynamics (i.e., the feeling of the game during play), and the aesthetics, but do not offer guidance or training on engaging with the ways we embed race in games. This project aims to create and study a human-centered and critical race theory-informed game design framework that incorporates a deeper engagement with race throughout the game production lifecycle.
+    \n\n
+    This research requires not only looking at what is when it comes to the racial oppression we reproduce in games (through qualitative research methods), but envisioning what could be (through design research methods). This material is based upon work supported by the U.S. National Science Foundation under Award No. 2339611"
+
+- section_part: "research"
+  title: Afropessimism on Social Media
+  team_1: "Lead Researcher: Gianna Williams"
+  team_2: "Research Team and Collaborators: Soni Rusagara, Jenny Leana Fotso Ngompe, Alyssa Smith, Angela D.R. Smith, Natalie Chen, Michael Ann DeVito"
+  long-description:
+    "Personalization algorithms (i.e., algorithms optimized by users' personal interactions, data and engagement) dominate online social platforms, pushing the narrative that what is shown in your feed reflects something about yourself and what you’re likely to enjoy. Black users both have a large presence on these platforms proportionate to others users and create and share some of the most popular and influential content (e.g., dance trends, pop culture analyses, political commentary, etc.).
+    \n\n
+    However, Black online communities have increasingly vocalized that their content is suppressed, demonetized, and scrutinized disproportionately compared to other users as well. My research seeks to center Black online communities and their experiences with personalization algorithms using CSCW, human-computer interaction and critical algorithmic studies approaches by using the theoretical lenses of Afropessimism, Afrofuturism, and Digital Black Feminism to aid in my research methods."
+  papers:
+    - "Williams, G. (2026). Afropessimistic Algorithms: Personalization, Confinement, and Resistance of Black Online Social Networks. In Proceedings of the 2026 Companion of the Computer-Supported Cooperative Work and Social Computing (pp. 603-605)."
+    - "Williams, G., Chen, N., DeVito, M. A., & To, A. (2025, April). Why Can't Black Women Just Be?: Black Femme Content Creators Navigating Algorithmic Monoliths. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (pp. 1-14)."
+    - "Williams, G., Rusagara, S., & To, A. (2026). What do you mean by “Hood” Prom?: Joyful Narratives Shown Through The Eyes of Black Teens on TikTok. ACM Transactions on Social Computing, 9(1), 1-30."
+
+- section_part: "research"
+  title: "The Spectrums for Engaging with Race in Games (SERG) Framework"
+  team_1: "Lead Researcher: Alexandra To"
+  team_2: "Research Team: Gianna Williams, Natalie Chen, Dylan Dinio, Jailyn Zabala, Tris Wong, Bethany Miatta Turay"
+  short-description: A framework for understanding race and designing for racial representations and engagement in games.
+  long-description:
+    "Game designers and the games industry have received a call to action to make more racially inclusive games. While there are many frameworks for critical analysis of racial representations, there are not widely adopted frameworks for game design engaging race. Engaging race in the context of a global games audience with many different desires, needs, and experiences is an incredibly challenging problem without easy answers.
+    \n\n
+    The Spectrums for Engaging Race in Games (SERG) framework for designing racial representations in games incorporates critical race theory, designing for BIPOC flourishing, and content analyses of over 50 digital and non-digital games. It includes a set of essential concepts on race as well as eight design spectrums for disaggregating where and how race lives in game design. The SERG framework contributes a tool for both game designers as well as games researchers in meaningfully engaging with the ways games remake and reproduce racial gamic logics."
+  image: "SERG-slideshow.webp"
+  link: "/serg-home.html"
+
+- section_part: "transformational"
+  title: "Nine-Tenths of the Law"
+  team_1: "Design and Research Team: Jailyn Zabala, B Sichling, Yuxi Wu, Kerem Pauwels, Alexandra To"
+  short-description: "A 2-player TTRPG about anger, resistance, and possession."
+  long-description:
+    "“Who is allowed to be angry about injustice done to them?” This question inspired our team of BIPOC and queer designers to design a transformational game that gives power to our communities' anger. Marginalized people are expected to keep the appearance of civility and compassion to groups of people who would see them eradicated. This constraint on resistance work is exhausting, as we are expected to swallow the anger and the despair caused by systemic oppression such as material and political existential threats. In our game, Nine-Tenths of the Law, we ask players to explore that anger and how we might use it to fight for our communities and against bigots/fascists.
+    \n\n
+    This is a 2-player tabletop roleplaying game where one player is the Ghost who haunts a systematically neglected community where they offer otherworldly help. The other player is the Medium hired to try to find a missing person (the Haunted) last seen on this property. The game takes place over one night as the Ghost tries to recollect their memories of the Haunted) and what happened that night they had and the Medium tries to help the Ghost in their recollection by investigating the scene. Together, using tarot cards to bridge their communication, they try to discover what actually happened to the Haunted."
+  link: https://ato-lab.itch.io/nine-tenths-of-the-law
